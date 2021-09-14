@@ -1,3 +1,4 @@
+package Gugudan;
 
 public class GugudanMainPractice {
 	public static void main(String[] args) {
