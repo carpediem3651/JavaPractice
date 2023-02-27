@@ -6,17 +6,22 @@ public class no2525 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		int C = sc.nextInt();
+		int h = sc.nextInt();
+		int m = sc.nextInt();
+		int t = sc.nextInt();
 		
-		int min = 60 * A + B;
-		min += C;
+		h += t / 60;
+		m += t % 60;
 		
-		int hour = (min/60) % 24; // 시 (24시 이상이 될 경우 0시부터 시작하도록 한다)
-		int minute = min % 60; // 분
+		if(m >= 60) {
+			h += 1;
+			m -= 60;
+		} 
+		if(h >= 24) {
+			h -= 24;
+		}
 		
-		System.out.println(hour + " " + minute);
+		System.out.println(h + " " + m);
 	}
 
 }
