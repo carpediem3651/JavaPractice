@@ -13,7 +13,7 @@ public class no10950 {
 		for (int i = 0; i < t; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
-			arr[t] = a+b;
+			arr[i] = a+b;
 		}
 		
 		sc.close();
