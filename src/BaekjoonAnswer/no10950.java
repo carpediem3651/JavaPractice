@@ -18,7 +18,7 @@ public class no10950 {
 		
 		sc.close();
 		
-		for(int k : arr) { // 변수 k에 배열 값을 하나씩 담는다.
+		for(int k : arr) { // 변수 k에 배열 값을 하나씩 담는
 			System.out.println(k);
 		}
 	}
